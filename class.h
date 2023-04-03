@@ -7,7 +7,7 @@ using namespace std;
 
 // classe véhicule et ces classes filles  & classe fournisseur for u boss :)
 // If u can verify both of Client and Mecanicien classes my mind has been shufflin dealin with'em (partie l'héritage)(so chatgpt did the whole work)
-// line 82  "Vehicule vehicules[MAX_VEHICULES]" this line means a table of vehicules (btw chagpt helped me with it it seems right so i put it )
+// line 82  "Vehicule vehicules[MAX_VEHICULES]" does this line mean a table of vehicules?(btw chagpt helped me with it it seems right so i put it )
 // in line 178 i ve created an AfficheVehicule function so remember it once ur up with vehicule class (i ve  created affiche func almost in the whole classes)
 
 
