@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <stdexcept>
 
 #include "Client.h"
 #include "RendezVous.h"
@@ -34,7 +35,7 @@ public:
 	int addRendezVous(RendezVous*);
 	RendezVous* getRendezVous(int i);
 	void AnnulerRendezVous(RendezVous*);
-	void AnnulerRendezVousAvecDate(std::string);
+	void AnnulerRendezVous(std::string);
 	int addService(Service*);
 	Service* getService(int i);
 

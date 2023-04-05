@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camion.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Facture.cpp" />
     <ClCompile Include="Fournisseur.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="Voiture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camion.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Facture.h" />
     <ClInclude Include="Fournisseur.h" />

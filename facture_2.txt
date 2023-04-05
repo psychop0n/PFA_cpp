@@ -1,9 +1,9 @@
 Facture #2 du 2023-06-06 pour Seifeddine
 
 Rendez-vous :
-- Rendez-vous le 2023-06-06 à 10:00:00 pour la vehicule "407" avec le mecanicien "Hamrouni".
+- Rendez-vous le 2023-06-06 a 10:00:00 pour la vehicule "407" avec le mecanicien "Hamrouni".
 
 Services :
-- Service: Rotation du pneu, Prix: 20.000000
+- Service: Rotation du pneu, Vidange, Prix: 70.000000
 
-Montant total : 20.000000 TND
+Montant total : 70.000000 TND

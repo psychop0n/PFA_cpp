@@ -42,9 +42,9 @@ int main() {
     cout << "----" << endl << bill.getAllDetails() << "----" << endl;
 
     // supprimer 1er rendez vous
+    bill.AnnulerRendezVous(&appt1);
 
     // ajout service et rendez-vous
-    bill.AnnulerRendezVous(&appt1);
     bill.addRendezVous(&appt2);
     bill.addService(&service2);
     cout << "Apres annulation du rendez vous:" << endl << bill.getAllDetails() << "----" << endl;
@@ -55,7 +55,8 @@ int main() {
 
 
     // Client 2:
-    Facture bill2("2023-06-06", &client2, { &appt3 }, { &service3 });
+    Service s = service3 + service1;
+    Facture bill2("2023-06-06", &client2, { &appt3 }, { &s });
     cout << "--------------------------------------------------" << endl << endl;
     cout << "----" << endl << bill2.getAllDetails() << "----" << endl;
     nom_fichier_facture = "facture_" + std::to_string(bill2.getIdFacture()) + ".txt";

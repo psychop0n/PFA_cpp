@@ -17,6 +17,7 @@ public:
 
     std::string getAllDetails() const;
     friend std::ostream& operator<<(std::ostream&, const Service&);
+    friend Service operator+(Service&, Service&);
 };
 
 #endif  // SERVICE_H

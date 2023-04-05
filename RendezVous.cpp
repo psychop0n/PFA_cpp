@@ -66,7 +66,7 @@ Mecanicien* RendezVous::getMecanicien() const
 }
 
 std::string RendezVous::getAllDetails() const {
-	return "Rendez-vous le " + m_date + " à " + m_heure + " pour la vehicule \"" + m_vehicule->getModele() + "\" avec le mecanicien \"" + m_mecanicien->getNom() + "\".";
+	return "Rendez-vous le " + m_date + " a " + m_heure + " pour la vehicule \"" + m_vehicule->getModele() + "\" avec le mecanicien \"" + m_mecanicien->getNom() + "\".";
 }
 
 std::ostream& operator<<(std::ostream& os, const RendezVous& R) {

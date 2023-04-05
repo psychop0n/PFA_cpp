@@ -67,7 +67,7 @@ void Facture::AnnulerRendezVous(RendezVous* R) {
 	}
 }
 
-void Facture::AnnulerRendezVousAvecDate(std::string date) {
+void Facture::AnnulerRendezVous(std::string date) {
 	for (auto P = this->rendezVous.begin(); P != this->rendezVous.end(); P++)
 	{
 		if (date == (*P)->getDate()) {
@@ -112,6 +112,6 @@ bool Facture::saveToFile(const std::string& filename) {
 	}
 	else {
 		std::cerr << "Unable to open file " << filename << " for writing" << std::endl;
-		return false;
+		throw "Unable to open file " + filename + " for writing";
 	}
 }

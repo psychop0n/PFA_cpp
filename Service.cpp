@@ -25,3 +25,8 @@ std::ostream& operator<<(std::ostream& os, const Service& S) {
 	os << "Prix: " << S.getPrix();
 	return os;
 }
+Service operator+(Service& S1, Service& S2) {
+	Service S(S1.getNom() + ", " + S2.getNom(), S1.getPrix() + S2.getPrix());
+	return S;
+}
+
