@@ -72,7 +72,6 @@ void Facture::AnnulerRendezVousAvecDate(std::string date) {
 	{
 		if (date == (*P)->getDate()) {
 			this->rendezVous.erase(P);
-			std::cout << "Le rendez vous de date " << date << " a ete anulee." << std::endl;
 			return;
 		}
 	}

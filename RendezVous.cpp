@@ -11,6 +11,10 @@ RendezVous::RendezVous(std::string date, Vehicule* vehicule, Client* client, Mec
 {
 }
 
+RendezVous::~RendezVous() {
+	std::cout << "Le rendez vous de date " << m_date << " a ete anulee." << std::endl;
+}
+
 void RendezVous::setDate(std::string D)
 {
 	m_date = D;

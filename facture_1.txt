@@ -1,0 +1,10 @@
+Facture #1 du 2023-04-07 pour Rayen
+
+Rendez-vous :
+- Rendez-vous le 2023-05-06 à 10:00:00 pour la vehicule "Clio 3" avec le mecanicien "Hamrouni".
+
+Services :
+- Service: Vidange, Prix: 50.000000
+- Service: Vérification des freins, Prix: 25.000000
+
+Montant total : 75.000000 TND

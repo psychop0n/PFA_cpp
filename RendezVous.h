@@ -20,6 +20,7 @@ private:
 public:
     RendezVous(std::string date, std::string heure, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
     RendezVous(std::string date, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
+    ~RendezVous();
 
     void setDate(std::string);
     std::string getDate() const;
