@@ -14,7 +14,9 @@ public:
     Client(const std::string& nom, const std::string& adresse, const std::string& telephone);
     Client(const std::string& nom, const std::string& adresse);
     const std::vector<Vehicule*>& getVehicules() const;
-    void ajouterVehicule(Vehicule* vehicule);
+    void ajouterVehicule(Vehicule*);
+
+    friend std::ostream& operator<<(std::ostream&, const Client&);
 };
 
 #endif // CLIENT_H

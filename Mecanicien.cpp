@@ -9,6 +9,10 @@ Mecanicien::Mecanicien(std::string nom, std::string adresse, std::string telepho
 Mecanicien::Mecanicien(std::string nom, std::string specialite)
 	: Personne(nom), specialite(specialite) {}
 
+void Mecanicien::setSpecialite(std::string s)
+{
+	specialite = s;
+}
 std::string Mecanicien::getSpecialite() const {
 	return specialite;
 }

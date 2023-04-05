@@ -13,6 +13,7 @@ public:
     Mecanicien(std::string nom, std::string adresse, std::string telephone, std::string email, std::string specialite);
     Mecanicien(std::string nom, std::string adresse, std::string telephone, std::string specialite);
     Mecanicien(std::string nom, std::string specialite);
+    void setSpecialite(std::string);
     std::string getSpecialite() const;
 };
 

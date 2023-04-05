@@ -14,3 +14,9 @@ void Client::ajouterVehicule(Vehicule* vehicule) {
 	vehicules.push_back(vehicule);
 }
 
+std::ostream& operator<<(std::ostream& os, const Client& client) {
+	os << "Nom: " << client.getNom() << ", Adresse: " << client.getAdresse();
+	os << "Telephone: " << client.getTelephone() << ", Email: " << client.getEmail();
+
+	return os;
+}

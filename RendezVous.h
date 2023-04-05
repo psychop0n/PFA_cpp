@@ -3,8 +3,6 @@
 
 #include <string>
 #include <vector>
-#include <ctime>
-#include <fstream>
 #include <iostream>
 
 #include "Vehicule.h"
@@ -12,24 +10,30 @@
 #include "Mecanicien.h"
 
 class RendezVous {
-public:
-    RendezVous(std::tm date, std::tm heure, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
-    RendezVous(std::tm date, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
-
-    std::tm getDate() const;
-    std::tm getHeure() const;
-    Vehicule* getVehicule() const;
-    Client* getClient() const;
-    Mecanicien* getMecanicien() const;
-    std::string getDetailsRendezVous() const;
-    bool saveToFile(const std::string& filename);
-
 private:
-    std::tm m_date;
-    std::tm m_heure;
+    std::string m_date;
+    std::string m_heure;
     Vehicule* m_vehicule;
     Client* m_client;
     Mecanicien* m_mecanicien;
+
+public:
+    RendezVous(std::string date, std::string heure, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
+    RendezVous(std::string date, Vehicule* vehicule, Client* client, Mecanicien* mecanicien);
+
+    void setDate(std::string);
+    std::string getDate() const;
+    void setHeure(std::string);
+    std::string getHeure() const;
+    void setVehicule(Vehicule *);
+    Vehicule* getVehicule() const;
+    void setClient(Client*);
+    Client* getClient() const;
+    void setMecanicien(Mecanicien*);
+    Mecanicien* getMecanicien() const;
+
+    std::string getAllDetails() const;
+    friend std::ostream& operator<<(std::ostream&, const RendezVous&);
 };
 
 #endif // RENDEZVOUS_H

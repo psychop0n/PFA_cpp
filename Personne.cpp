@@ -20,21 +20,30 @@ Personne::Personne(const std::string& nom)
 {
 }
 
-std::string Personne::getNom() const
-{
+void Personne::setNom(std::string n) {
+	nom = n;
+}
+std::string Personne::getNom() const {
 	return nom;
 }
 
-std::string Personne::getAdresse() const
-{
+void Personne::setAdresse(std::string a) {
+	adresse = a;
+}
+std::string Personne::getAdresse() const {
 	return adresse;
 }
 
-std::string Personne::getTelephone() const
-{
+void Personne::setTelephone(std::string t) {
+	telephone = t;
+}
+std::string Personne::getTelephone() const {
 	return telephone;
 }
 
+void Personne::setEmail(std::string e) {
+	email = e;
+}
 std::string Personne::getEmail() const
 {
 	return email;
@@ -42,6 +51,5 @@ std::string Personne::getEmail() const
 
 std::ostream& operator<<(std::ostream& os, const Personne& personne) {
 	os << "Nom: " << personne.getNom() << ", ";
-	os << "Age: " << personne.getEmail();
 	return os;
 }

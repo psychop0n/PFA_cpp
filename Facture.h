@@ -3,10 +3,14 @@
 
 #include <string>
 #include <vector>
+#include <fstream>
+#include <iostream>
 
 #include "Client.h"
 #include "RendezVous.h"
 #include "Service.h"
+
+static int nbFactures;
 
 class Facture {
 private:
@@ -19,15 +23,23 @@ private:
 
 public:
 	Facture(std::string date, Client* client, std::vector<RendezVous*> rendezVous, std::vector<Service*> services);
-	int getIdFacture() const;
 	void setIdFacture(int id);
-	std::string getDate() const;
+	int getIdFacture() const;
 	void setDate(std::string date);
-	double getMontant() const;
+	std::string getDate() const;
 	void setMontant(double montant);
-	Client* getClient() const;
+	double getMontant() const;
 	void setClient(Client* client);
-	std::string getDetailsFacture() const;
+	Client* getClient() const;
+	int addRendezVous(RendezVous*);
+	RendezVous* getRendezVous(int i);
+	void AnnulerRendezVous(RendezVous*);
+	void AnnulerRendezVousAvecDate(std::string);
+	int addService(Service*);
+	Service* getService(int i);
+
+	std::string getAllDetails() const;
+	bool saveToFile(const std::string& filename);
 };
 
 #endif // FACTURE_H
