@@ -51,7 +51,7 @@ RendezVous* Facture::getRendezVous(int i) {
 }
 
 int Facture::addRendezVous(RendezVous* R) {
-	int i = this->rendezVous.size();
+	int i = int(this->rendezVous.size());
 	this->rendezVous.push_back(R);
 	return i;
 }
@@ -82,7 +82,7 @@ Service* Facture::getService(int i) {
 }
 
 int Facture::addService(Service* F) {
-	int i = this->services.size();
+	int i = int(this->services.size());
 	this->services.push_back(F);
 	this->montant += F->getPrix();
 	return i;

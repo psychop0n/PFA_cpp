@@ -5,7 +5,7 @@
 
 class Moto : public Vehicule {
 public:
-    Moto(const std::string& marque, const std::string& modele, int annee);
+    Moto(const std::string&, const std::string& marque, const std::string& modele, int annee);
 };
 
 #endif // MOTO_H

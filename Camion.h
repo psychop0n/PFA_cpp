@@ -4,6 +4,6 @@
 class Camion :
     public Voiture
 {
-    Camion(const std::string&, const std::string&, int, std::string);
+    Camion(const std::string&, const std::string&, const std::string&, int, std::string);
 };
 

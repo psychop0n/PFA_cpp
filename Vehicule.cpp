@@ -1,8 +1,15 @@
 #include "Vehicule.h"
 
-Vehicule::Vehicule(const std::string& marque, const std::string& modele, int annee)
-	: marque(marque), modele(modele), annee(annee)
+Vehicule::Vehicule(const std::string& id, const std::string& marque, const std::string& modele, int annee)
+	: id(id), marque(marque), modele(modele), annee(annee)
 {
+}
+
+void Vehicule::setId(std::string i) {
+	id = i;
+}
+std::string Vehicule::getId() const {
+	return id;
 }
 
 void Vehicule::setMarque(std::string m)

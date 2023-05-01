@@ -10,7 +10,7 @@ private:
     std::string serie;
 
 public:
-    Voiture(const std::string& marque, const std::string& modele, int annee, const std::string& serie);
+    Voiture(const std::string& id, const std::string& marque, const std::string& modele, int annee, const std::string& serie);
     void setSerie(std::string);
     std::string getSerie() const;
 

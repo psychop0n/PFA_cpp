@@ -2,15 +2,19 @@
 #define VEHICULE_H
 
 #include <string>
+#include "InstanceManager.h"
 
-class Vehicule {
+class Vehicule: public InstanceManager<Vehicule> {
 private:
+    std::string id;
     std::string marque;
     std::string modele;
     int annee;
 
 public:
-    Vehicule(const std::string& marque, const std::string& modele, int annee);
+    Vehicule(const std::string& id, const std::string& marque, const std::string& modele, int annee);
+    void setId(std::string);
+    std::string getId() const;
     void setMarque(std::string);
     std::string getMarque() const;
     void setModele(std::string);

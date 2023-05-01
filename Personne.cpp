@@ -1,24 +1,33 @@
 #include "Personne.h"
 
-Personne::Personne(const std::string& nom, const std::string& adresse, const std::string& telephone, const std::string& email)
-	: nom(nom), adresse(adresse), telephone(telephone), email(email)
+Personne::Personne(const std::string& id, const std::string& nom, const std::string& adresse, const std::string& telephone, const std::string& email)
+	: id(id), nom(nom), adresse(adresse), telephone(telephone), email(email)
+{
+
+}
+
+Personne::Personne(const std::string& id,  const std::string& nom, const std::string& adresse, const std::string& telephone)
+	: Personne(id, nom, adresse, telephone, "")
 {
 }
 
-Personne::Personne(const std::string& nom, const std::string& adresse, const std::string& telephone)
-	: Personne(nom, adresse, telephone, "")
+Personne::Personne(const std::string& id,  const std::string& nom, const std::string& adresse)
+	: Personne(id, nom, adresse, "", "")
 {
 }
 
-Personne::Personne(const std::string& nom, const std::string& adresse)
-	: Personne(nom, adresse, "", "")
+Personne::Personne(const std::string& id, const std::string& nom)
+	: Personne(id, nom, "", "", "")
 {
 }
 
-Personne::Personne(const std::string& nom)
-	: Personne(nom, "", "", "")
-{
+void Personne::setId(std::string i) {
+	id = i;
 }
+std::string Personne::getId() const {
+	return id;
+}
+
 
 void Personne::setNom(std::string n) {
 	nom = n;
@@ -50,6 +59,6 @@ std::string Personne::getEmail() const
 }
 
 std::ostream& operator<<(std::ostream& os, const Personne& personne) {
-	os << "Nom: " << personne.getNom() << ", ";
+	os << "Personne| ID: " << personne.getId() << ", Nom: " << personne.getNom() << ".";
 	return os;
 }
