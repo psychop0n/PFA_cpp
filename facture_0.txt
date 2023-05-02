@@ -1,0 +1,11 @@
+Facture # du 1 pour 1
+
+Rendez-vous :
+- Rendez-vous le 1 a  pour la vehicule "1" avec le mecanicien "1".
+- Rendez-vous le 1 a  pour la vehicule "1" avec le mecanicien "1".
+
+Services :
+- Service: 0, Prix: 1.000000
+- Service: 5, Prix: 6.000000
+
+Montant total : 7.000000 TND

@@ -18,6 +18,7 @@ public:
     Personne(const std::string& id, const std::string& nom, const std::string& adresse, const std::string& telephone);
     Personne(const std::string& id, const std::string& nom, const std::string& adresse);
     Personne(const std::string& id, const std::string& nom);
+    Personne();
     void setId(std::string);
     std::string getId() const;
     void setNom(std::string);

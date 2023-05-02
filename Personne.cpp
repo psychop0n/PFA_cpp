@@ -21,6 +21,10 @@ Personne::Personne(const std::string& id, const std::string& nom)
 {
 }
 
+Personne::Personne() : Personne("", "", "", "", "")
+{
+}
+
 void Personne::setId(std::string i) {
 	id = i;
 }
@@ -59,6 +63,6 @@ std::string Personne::getEmail() const
 }
 
 std::ostream& operator<<(std::ostream& os, const Personne& personne) {
-	os << "Personne| ID: " << personne.getId() << ", Nom: " << personne.getNom() << ".";
+	os << "- Personne | ID: " << personne.getId() << ", Nom: " << personne.getNom() << ".";
 	return os;
 }
